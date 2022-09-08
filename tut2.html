@@ -1,0 +1,58 @@
+<html>
+    <head>
+        <title>Train Reservation System</title>
+        <link rel="stylesheet" href="tut2.css">
+        <script src="tut2.js"></script>
+        <!-- CSS only -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+    </head>
+    <body onload="defaultTab('Home')">
+        <!-- Title -->
+        <h2 class="header">Train Reservation System</h2>
+
+        <!-- Navigation bar -->
+        <div class="tab">
+        <button id="home" class="tablinks" onclick="openTab(event, 'Home')">Home</button>
+        <button id="book" class="tablinks" onclick="openTab(event, 'Book')">New Booking</button>
+        <button id="cancel" class="tablinks" onclick="openTab(event, 'Cancel')">Booking Cancellation</button>
+        <button id="display" class="tablinks" onclick="openTab(event, 'Display')">Display All Bookings</button>
+        </div>
+
+        <!-- Home page tab -->
+        <div id="Home" class="tabcontent">
+            <h3 class="tab-header">Welcome!</h3>
+            <p id="homepage"></p>
+        </div>
+
+        <!-- Booking tab -->
+        <div id="Book" class="tabcontent">
+            <h4 class="tab-header">New Booking</h3>
+            <form>
+                <div id="Book" class="form-group">
+                    <label for="nameField">Full name</label>
+                    <input type="text" class="form-control" id="nameField" placeholder="Enter name">
+                </div><br />
+                <div class="form-group">
+                    <label for="phoneField">Phone number</label>
+                    <input type="number" class="form-control" id="phoneField" placeholder="Enter phone number">
+                </div><br />
+    
+                <button type="button" id="nameSubmit" value="Book" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+
+        <!-- Cancellation tab -->
+        <div id="Cancel" class="tabcontent">
+            <h4 class="tab-header">Booking Cancellation</h3>
+            <table id="cancel_table" class="table table-hover">
+            </table>
+        </div>
+
+        <!-- Display tab -->
+        <div id="Display" class="tabcontent">
+            <h4 class="tab-header">Display All Bookings</h3>
+            <table id="table" class="table table-hover">
+            </table>
+    </body>
+</html>
