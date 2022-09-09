@@ -139,7 +139,7 @@ function displayCancelList() {
     '<th>Full Name</th>' +
     '<th>Phone Number</th>' +
     '<th>Timestamp</th>' +
-    '<th>Cancellation</th>' +
+    '<th>Action</th>' +
     '</tr>'
     );
     var i = 1;
